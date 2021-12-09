@@ -1,3 +1,4 @@
+print('Projektu veidoja Laura un Jānis')
 print("Kuru no uzdevumiem vēlies realizēt")
 print("Izvēlies ciparu")
 print("1- pirmo uzdevumu")
@@ -5,9 +6,10 @@ print("2 - otro uzdevumu")
 print("3 - trešo uzdevumu")
 print("__________________")
 print("Tu esi izvēlējies uzdevumu nr.")
+
+
+
 b=[]
-
-
 def uzdevums1():
   print('Uzdevums1')
   kods=1
@@ -18,11 +20,9 @@ def uzdevums1():
     kods=kods+1
     if kods==3:
      b1=c
-     print(b1)
     if kods==5:
      b2=c
-     print(b2)
-  print(b)
+  print('Sarakst:',b)
   print('2. un 4. skaitla reizināums ir',b1*b2)
     
 
@@ -35,7 +35,7 @@ def uzdevums2():
   c = int(input("Ievadi 3. skaitli, kurš ir intervālā no -10 līdz 10"))
   d = int(input("Ievadi 4. skaitli, kurs ir intervālā no -10 līdz 10"))
   e = int(input("Ievadi 5. skaitli, kurs ir intervālā no -10 līdz 10"))
-  print( a, b, c, d, e)
+  print('Sarakst: ', a, b, c, d, e)
   z=0
   if a < b:
     print(" 2. ievadītais skaitlis ir lielāks ar 1. ievadīto skaitli")
@@ -52,14 +52,27 @@ def uzdevums2():
   if d < e:
     print(" 5. ievadītais skaitlis ir lielāks ar 4. ievadīto skaitli") 
     z=z+1 
-  print("Pēc skaita sarakstā skaitļi, kuri lielāki par iepriekšpēdējo saraksta elementu ir:  ",z)
+  print("Pēc skaita sarakstā skaitļi, kuri lielāki par iepriekšējo saraksta elementu ir:  ",z)
 
 
 def uzdevums3():
   print('Uzdevums3')
+  A=['a','b'] #Atildes
+  Q=[]#lietotāja ievadītās atbildes
+  for i in range(1):
+    print('1. Kā sauc Latvijas galvaspilsētu?')
+    print('a) Jelgava')
+    print('b) Ogre')
+    print('c)Rīga')
+    print('d) Tukums')
+    a1=input('ievadi atbildi')
+    Q.append(a1)
+    print('tava atbilde ir', a1)
+    print('2. Cik krāsas ir Latvijas karogā?')
+    print('a)1   b)   2c)    3d)4')
 
-
-
+  print('pareizās atbildes ir ',A)
+  print('Tavas ievadītās atbildes',Q)
 
 
 
