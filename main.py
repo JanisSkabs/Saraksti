@@ -57,7 +57,7 @@ def uzdevums2():
 
 def uzdevums3():
   print('Uzdevums3')
-  A=['a','b'] #Atildes
+  A=['c','b','a'] #Atildes
   Q=[]#lietotāja ievadītās atbildes
   for i in range(1):
     print('1. Kā sauc Latvijas galvaspilsētu?')
@@ -70,6 +70,15 @@ def uzdevums3():
     print('tava atbilde ir', a1)
     print('2. Cik krāsas ir Latvijas karogā?')
     print('a)1   b)   2c)    3d)4')
+    a2=input('ievadi atbildi')
+    Q.append(a2)
+    print('3. Kā sauc pašreizējo Latvijas prezidentu(vārds)?')
+    print('a)Egils')
+    print('b)Egīls')
+    print('c)Raimonds')
+    print('d)Edgars')
+    a3=input('ievadi atbildi')
+    Q.append(a3)
 
   print('pareizās atbildes ir ',A)
   print('Tavas ievadītās atbildes',Q)
